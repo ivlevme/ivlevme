@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="normalize.css">
+  <style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    animation-name: backgroundGradientAnimation;
+    animation-duration: 15000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    background: linear-gradient(45deg, #32BCE9, #c72db8, #31ca90, #E5E932);
+    background-size: 1000% 1000%;
+  }
+
+  h1 {
+    display: inline-block;
+    margin-bottom: 50px;
+    text-align: center;
+
+    color: white;
+  }
+
+  @keyframes backgroundGradientAnimation {
+    0% {
+		background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <h1>Привет! 👋 Cайт находится в разработке ⏳</h1>
+</body>
+
+</html>
